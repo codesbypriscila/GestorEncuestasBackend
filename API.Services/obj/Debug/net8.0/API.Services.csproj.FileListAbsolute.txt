@@ -1,0 +1,17 @@
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\bin\Debug\net8.0\API.Services.deps.json
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\bin\Debug\net8.0\API.Services.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\bin\Debug\net8.0\API.Services.pdb
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\bin\Debug\net8.0\API.Data.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\bin\Debug\net8.0\API.Entities.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\bin\Debug\net8.0\API.Entities.pdb
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\bin\Debug\net8.0\API.Data.pdb
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.csproj.AssemblyReference.cache
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.AssemblyInfoInputs.cache
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.AssemblyInfo.cs
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.csproj.CoreCompileInputs.cache
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Serv.A72B4071.Up2Date
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\refint\API.Services.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.pdb
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\ref\API.Services.dll
