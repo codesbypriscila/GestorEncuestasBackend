@@ -72,7 +72,7 @@ namespace API.Presentation.Controllers
             var encuesta = await _encuestaService.ObtenerEncuestaPorId(id);
 
             if (encuesta == null)
-                return NotFound("Encuesta no encontrada.");
+                return NotFound($"Encuesta con ID {id} no encontrada.");
 
             encuesta.Titulo = encuestaRequest.Titulo;
             encuesta.Descripcion = encuestaRequest.Descripcion;
@@ -80,10 +80,22 @@ namespace API.Presentation.Controllers
             encuesta.EstaActiva = encuestaRequest.EstaActiva;
             encuesta.FechaExpiracion = encuestaRequest.FechaExpiracion;
 
+        try
+        {
             var encuestaActualizada = await _encuestaService.ActualizarEncuesta(encuesta);
+            if (encuestaActualizada == null)
+            {
+                return BadRequest("Hubo un problema al actualizar la encuesta.");
+            }
 
             return Ok(encuestaActualizada);
         }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+        }
+}
+
 
         //eliminar
         //[Authorize(Roles = "Administrador")]

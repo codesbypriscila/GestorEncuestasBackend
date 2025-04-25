@@ -102,3 +102,9 @@ C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\itext.layout.dll
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\itext.pdfa.dll
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\itext.sign.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\obj\Debug\net8.0\API_Presentation.sourcelink.json
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\MailKit.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\MimeKit.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Presentation\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

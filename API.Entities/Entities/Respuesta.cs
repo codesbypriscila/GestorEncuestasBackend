@@ -7,7 +7,7 @@ public class Respuesta
     public int Id { get; set; }
     public int EncuestaId { get; set; }
     [JsonIgnore]
-    public Encuesta? Encuesta { get; set; }
+    public Encuesta? Encuesta { get; set; } 
 
     public int UsuarioId { get; set; }
     [JsonIgnore]

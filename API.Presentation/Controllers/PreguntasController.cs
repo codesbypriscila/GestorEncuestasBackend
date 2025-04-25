@@ -41,35 +41,13 @@ namespace API.Presentation.Controllers
             return Ok(preguntas);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> ActualizarPregunta(int id, [FromBody] PreguntaRequest preguntaRequest)
+        [HttpGet("encuesta/{encuestaId}")]
+        public async Task<IActionResult> ObtenerPreguntasPorEncuesta(int encuestaId)
         {
-            var pregunta = await _preguntaService.ObtenerPreguntaPorId(id);
-
-            if (pregunta == null)
-                return NotFound("Pregunta no encontrada.");
-
-            pregunta.EncuestaId = preguntaRequest.EncuestaId;
-            pregunta.Texto = preguntaRequest.PreguntaTexto!;
-            pregunta.TipoRespuesta = preguntaRequest.TipoRespuesta;
-
-            var preguntaActualizada = await _preguntaService.ActualizarPregunta(pregunta);
-
-            return Ok(preguntaActualizada);
+            var preguntas = await _preguntaService.ObtenerPreguntasPorEncuesta(encuestaId);
+            return Ok(preguntas);
         }
 
-        //eliminar
-        //[Authorize(Roles = "Administrador")]
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> EliminarPregunta(int id)
-        {
-            var preguntaEliminada = await _preguntaService.EliminarPregunta(id);
-
-            if (!preguntaEliminada)
-                return NotFound("Pregunta no encontrada.");
-
-            return NoContent();
-        }
 
 
     }

@@ -16,20 +16,29 @@ namespace API.Presentation.Controllers
         [HttpPost]
         public async Task<IActionResult> GuardarRespuesta([FromBody] RespuestaRequest request)
         {
-            var respuesta = new Respuesta
+            try
             {
-                EncuestaId = request.EncuestaId,
-                UsuarioId = request.UsuarioId,
-                PreguntaId = request.PreguntaId,
-                ValorRespuesta = request.ValorRespuesta
-            };
+                var respuesta = new Respuesta
+                {
+                    EncuestaId = request.EncuestaId,
+                    UsuarioId = request.UsuarioId,
+                    PreguntaId = request.PreguntaId,
+                    ValorRespuesta = request.ValorRespuesta
+                };
 
-            var guardada = await _respuestaService.GuardarRespuesta(respuesta);
+                var guardada = await _respuestaService.GuardarRespuesta(respuesta);
 
-            if (guardada == null)
-                return BadRequest("El usuario ya ha respondido esta pregunta.");
-            return Ok(guardada);
+                if (guardada == null)
+                    return BadRequest("El usuario ya ha respondido esta pregunta.");
+
+                return Ok(guardada);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
         }
+
 
         [HttpGet("encuesta/{encuestaId}")]
         public async Task<IActionResult> ObtenerRespuestasPorEncuesta(int encuestaId)

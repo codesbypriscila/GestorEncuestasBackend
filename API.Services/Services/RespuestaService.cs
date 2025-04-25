@@ -4,10 +4,12 @@ using Microsoft.EntityFrameworkCore;
 public class RespuestaService : IRespuestaService
 {
     private readonly AppDbContext _context;
+    private readonly EmailService _emailService;
 
-    public RespuestaService(AppDbContext context)
+    public RespuestaService(AppDbContext context, EmailService emailService)
     {
         _context = context;
+        _emailService = emailService;
     }
 
     public async Task<Respuesta> GuardarRespuesta(Respuesta respuesta)
@@ -18,11 +20,19 @@ public class RespuestaService : IRespuestaService
 
         if (yaRespondida)
         {
-            return null!; 
+            return null!;
         }
 
         _context.Respuestas.Add(respuesta);
         await _context.SaveChangesAsync();
+
+        var nombreEncuesta = await _context.Encuestas
+            .Where(e => e.Id == respuesta.EncuestaId)
+            .Select(e => e.Titulo)
+            .FirstOrDefaultAsync();
+
+        await _emailService.EnviarCorreoNotificacion(nombreEncuesta!, respuesta.UsuarioId);
+
         return respuesta;
     }
 

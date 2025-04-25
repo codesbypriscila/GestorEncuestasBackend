@@ -26,4 +26,19 @@ public class ReportesController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+
+    [HttpGet("estadisticas/{encuestaId}")]
+    public async Task<IActionResult> ObtenerEstadisticas(int encuestaId, [FromServices] IEstadisticasService estadisticasService)
+    {
+        try
+        {
+            var resultado = await estadisticasService.ObtenerEstadisticasPorEncuestaAsync(encuestaId);
+            return Ok(resultado);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error al obtener estadísticas: {ex.Message}");
+        }
+    }
+
 }

@@ -9,3 +9,4 @@ C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Entities\obj\Debug\net8
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Entities\obj\Debug\net8.0\refint\API.Entities.dll
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Entities\obj\Debug\net8.0\API.Entities.pdb
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Entities\obj\Debug\net8.0\ref\API.Entities.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Entities\obj\Debug\net8.0\API.Entities.sourcelink.json

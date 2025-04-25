@@ -24,12 +24,13 @@ builder.Services.AddScoped<IEstadisticasService, EstadisticasService>();
 builder.Services.AddScoped<ReporteFactory>();
 builder.Services.AddScoped<PdfReporteGenerator>();
 builder.Services.AddScoped<ExcelReporteGenerator>();
+builder.Services.AddScoped<EmailService>();
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:5260")
+        policy.WithOrigins("http://localhost:3000")
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
@@ -55,7 +56,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 
-builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -69,8 +69,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowAll");
-app.UseAuthentication();
-app.UseAuthorization();
 app.UseHttpsRedirection();
 app.MapControllers();
 

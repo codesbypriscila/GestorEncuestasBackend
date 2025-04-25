@@ -15,3 +15,4 @@ C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\refint\API.Services.dll
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.pdb
 C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\ref\API.Services.dll
+C:\Users\prisc\OneDrive\Desktop\C-4\P2\ProyectoFinal\API.Services\obj\Debug\net8.0\API.Services.sourcelink.json
